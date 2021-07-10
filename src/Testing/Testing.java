@@ -1,30 +1,6 @@
 package src.Testing;
 
-import jdk.internal.org.xml.sax.SAXException;
-import org.w3c.dom.*;
-import src.main.Database_Utility;
-import src.main.IndexingManager;
-import src.main.Cryptography;
-import src.main.ObjReturn;
-
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Unmarshaller;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerException;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
-import java.io.File;
-import java.io.IOException;
-import java.security.KeyStore;
-import java.security.KeyStoreException;
-import java.security.PublicKey;
-import java.security.cert.Certificate;
-import java.util.ArrayList;
+import src.com.ehelpy.brihaspati4.IndexingManagerAPI.IndexingManager;
 
 public class Testing {
 
@@ -35,7 +11,13 @@ public class Testing {
        IndexingManager IM= IndexingManager.getInstance();
 
 
-        //Following code will check if table of a layerid exists or not
+
+
+
+
+
+
+       //Following code will check if table of a layerid exists or not
         // {
         /*boolean b=IM.checkTable(5);
         System.out.println(b);*/
@@ -52,13 +34,14 @@ public class Testing {
             c1 =  k.getCertificate("Certificate");}
         catch (KeyStoreException e) {
             e.printStackTrace();
-        }
-*/
-        //IM.addIndex("99267C42DE64C0904","peer","5000",2,0,false,"nks2",0,"1621911095568" ,c1);
-        //IM.addIndex("DD2051C7A9CD59A1BE822F699267C42DE64C0904","network","4000",1,0,false,"harry1",2,"1621911095568",c1);
+        }*/
+
+        //IM.addIndex("99267C42DE64C0904","peer","5000",2,1,false,"nks2",0,"1621911095568" ,c1);
+        //IM.addIndex("DD2051C7A9CD59A1BE822F699267C42DE64C0904","network","4000",1,0,false,"harry1",0,"1621911095568",c1);
         //IM.addIndex("FD2051C7A9CD59A1BE822F699267C42DE64C0904","manager","3000",1,2,true,"sindhu",0,"1621911095568",c1);
 
         //  }
+
 
         //Following code will calculate root for Key whose copy number is 0.This is done using hashing.
 
@@ -102,7 +85,7 @@ public class Testing {
         // {
 
 
-        // IM.queryForRoutingManager();
+         //IM.queryForRoutingManager();
 
         //  }
 
